@@ -57,9 +57,10 @@ async function createAttestation(profile, currentDate, reason) {
   const font = await pdfDoc.embedFont(PDFLib.StandardFonts.Helvetica);
 
   const dateStr = new Intl.DateTimeFormat("fr").format(currentDate);
-  const timeStr = new Intl.DateTimeFormat("fr", { timeStyle: "short" }).format(
-    currentDate
-  );
+  const timeStr = new Intl.DateTimeFormat("fr", {
+    hour: "2-digit",
+    minute: "2-digit"
+  }).format(currentDate);
 
   function drawText(text, x, y, { size = 11, pageNumber = 0 } = {}) {
     const page = pdfDoc.getPages()[pageNumber];
