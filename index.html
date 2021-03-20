@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form id="profile" class="hidden">
+      <label>Nom <input type="text" name="lastName" /> </label>
+      <label>Prénom <input type="text" name="firstName" /> </label>
+      <label>Né le <input type="text" name="birthDate" /> </label>
+      <label>A <input type="text" name="birthCity" /> </label>
+      <label>Ville <input type="text" name="city"/></label>
+      <label>Addresse <input type="text" name="address"/></label>
+      <label>Signature <input type="text" name="signature"/></label>
+      <input type="submit" value="OK" />
+    </form>
+    <div id="buttons" class="hidden">
+      <button id="dog" class="reason">Chien</button>
+      <button id="groceries" class="reason">Courses</button>
+      <button id="walk" class="reason">Promenade</button>
+      <button id="resetProfile">Reset</button>
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/pdf-lib@1.16.0/dist/pdf-lib.min.js"></script>
+  <script src="index.js"></script>
+</html>

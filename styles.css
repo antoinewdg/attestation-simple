@@ -1,0 +1,61 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-size: 16px;
+}
+
+form#profile {
+  display: flex;
+  flex-direction: column;
+}
+
+form#profile.hidden {
+  display: none;
+}
+
+form#profile label {
+  display: flex;
+  flex-direction: column;
+}
+
+form#profile input {
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+form#profile input[type="submit"] {
+  margin-top: 1rem;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+}
+
+#buttons.hidden {
+  display: none;
+}
+
+button {
+  flex: 1;
+  margin: 0.5rem 1rem;
+  height: 30%;
+  border: none;
+  font-size: 200%;
+}
+
+button.reason {
+  background: paleturquoise;
+}
+
+button#resetProfile {
+  background: palevioletred;
+}
